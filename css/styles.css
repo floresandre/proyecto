@@ -119,6 +119,8 @@ padding: 100px;
 
 }
 
+
+/*mq tablet cambie el color del fondo*/
 @media screen and (min-width:600px) {
 
 body{
@@ -147,6 +149,7 @@ main section .imag-10, .imag-11, .imag-12, .imag-13, .imag-14, .imag-15, .img1, 
 {display: none;}
 }
 
+/*mq desktop  cambie el color del fondo*/
 
 @media screen and (min-width:1024px){
 
