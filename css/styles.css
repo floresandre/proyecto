@@ -32,8 +32,14 @@ main {
     min-height: 100vh;
     margin: 100px; }
   main h1, main h2 {
-    color: red;
+    color: rgb(235, 12, 12);
+    background: #ebe5e5;
+    background: radial-gradient(white, red);
     text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text ;
     padding-top: 30px; }
   main .video {
     padding: 50px; }
@@ -45,6 +51,11 @@ main {
   margin-top: 50px;
   gap: 25px;
   padding: 100px; }
+
+  .informacion{
+    text-align: left;
+    padding: 100px;
+  }
 
 .contenedor {
   display: grid;
@@ -62,14 +73,20 @@ main {
   justify-content: center;
   align-items: center;
   margin: 100px;
-  padding: 50px; }
+  padding: 50px;}
 
-.candy {
+.tienda {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: repeat(2, 2fr);
-  margin: 50px;
-  text-align: center; }
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr;
+  justify-content: center;
+  align-items: center; 
+  gap: 50px;
+  padding: 100px;
+  margin: 50px 500px 50px 500px;
+}
+
+ 
 
 footer {
   display: flex;
