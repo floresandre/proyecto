@@ -11,7 +11,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-right: 50px;
-    background-color: whitesmoke; }
+    background-color: whitesmoke;
+    list-style: none; 
+  }
     body header nav div div ul {
       color: #e70909;
       list-style: none;
