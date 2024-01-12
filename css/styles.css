@@ -47,6 +47,7 @@ main {
   main main .video {
     padding: 50px; }
   main .video {
+    flex-wrap: wrap;
     padding: 50px; }
 
 .nosotros {
@@ -99,8 +100,26 @@ footer {
     list-style: none;
     text-decoration: none; }
 
-@media screen and (min-width: 600px) {
+@media screen {min-width: 560px;
   body {
+    background-color: black; }
+    body header {
+      flex-direction: column; }
+    body main section {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 50%); }
+    body .candy {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 6fr); }
+    body footer {
+      margin-bottom: 2rem; }
+    body main section .imag-10, body .imag-11, body .imag-12, body .imag-13, body .imag-14, body .imag-15, body .img1, body .img2 {
+      display: none; } }
+
+
+
+@media screen and (min-width: 600px) {
+  body { flex-wrap: wrap;
     background-color: black; }
     body header {
       flex-direction: column; }
