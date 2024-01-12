@@ -1,11 +1,15 @@
-*{
+//import
+@import "utilities/variables"
+@import "utilities/mixin"
+//nesting
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: black;
+    background-color: $color-principal;
     flex-wrap: wrap;
   
     header{
@@ -23,6 +27,8 @@ body {
                       display: flex;
                       gap: 30px;
                       font-size: 1.4rem;
+                      width: 20px;
+                      height: 20px;
                   }
               }
           }
@@ -33,9 +39,11 @@ body {
   a{
     text-decoration: none;
   }
+   
+  
   
   main{
-      color: whitesmoke;
+      color: $color-secundario;
       text-align: center;
       section{
         display: grid;
@@ -115,7 +123,7 @@ body {
     font-size: 1.3rem;
     padding: 70px;
     margin-top: 50px;
-    background-color: rgb(34, 33, 33);
+    background-color: $color-terciario;
     nav{
         ul{
             list-style: none;
@@ -123,12 +131,17 @@ body {
         }
     }
   }
+  .redes{
+    @include medidas(20px, 20px)
+    width: 30px;
+    height: 30px;
+  }
  
   //mq table//
   @media screen and (min-width:600px) {
 
     body{
-        background-color: black;
+        background-color: $color-principal;
     
     
     header{
@@ -157,7 +170,7 @@ body {
 @media screen and (min-width:1024px){
 
     body{
-        background-color: black;
+        background-color: $color-principal;
     
     header{
         flex-direction: row;
