@@ -11,9 +11,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-right: 50px;
-    background-color: whitesmoke;
-    list-style: none; 
-  }
+    background-color: whitesmoke; }
     body header nav div div ul {
       color: #e70909;
       list-style: none;
@@ -45,6 +43,11 @@ main {
     padding-top: 30px; }
   main .video {
     padding: 50px; }
+
+a{
+  text-decoration: none;
+}
+    
 
 .nosotros {
   display: flex;
